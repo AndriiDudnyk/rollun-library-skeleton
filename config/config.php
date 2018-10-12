@@ -7,13 +7,13 @@ use Zend\ConfigAggregator\PhpFileProvider;
 // Make environment variables stored in .env accessible via getenv(), $_ENV or $_SERVER.
 (new Dotenv())->load('.env');
 
-// Determine application environment ('dev' or 'prod')
+// Determine application environment ('dev' or 'prod').
 $appEnv = getenv('APP_ENV');
 
 $aggregator = new ConfigAggregator([
-    // Include your config providers here
+    // Include your config providers here.
 
-    // Load config according to chosen environment
+    // Load config according to chosen environment.
     //   - `dev.php`
     //   - `*.dev.php`
     //   - `prod.php`
